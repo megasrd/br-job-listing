@@ -1,8 +1,8 @@
-import styles from "./page.module.css";
+import '../../styles/global.scss';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className='container'>
       {/* Job Listing */}
     </div>
   );

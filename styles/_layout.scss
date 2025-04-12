@@ -1,0 +1,72 @@
+// Variables
+$grid-columns: 12;
+$gutter-width: 1rem;
+
+// Breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+// Mixins
+@mixin make-col($size) {
+    flex: 0 0 auto;
+    width: percentage($size / $grid-columns);
+}
+
+@mixin make-gutter {
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+}
+
+@mixin media-breakpoint-up($breakpoint) {
+    $min-width: map-get($breakpoints, $breakpoint);
+    @if $min-width != null {
+        @media (min-width: $min-width) {
+            @content;
+        }
+    }
+}
+
+// Grid Container
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: $gutter-width;
+    padding-right: $gutter-width;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Row
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($gutter-width / 2);
+    margin-right: -($gutter-width / 2);
+}
+
+// Columns
+.col {
+    @include make-gutter;
+    flex: 1 0 0;
+    max-width: 100%;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        @include make-col($i);
+    }
+
+    @each $breakpoint, $min-width in $breakpoints {
+        @include media-breakpoint-up($breakpoint) {
+            .col-#{$breakpoint}-#{$i} {
+                @include make-col($i);
+            }
+        }
+    }
+}

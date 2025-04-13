@@ -23,9 +23,28 @@ const userSlice = createSlice({
             state.isValid = false;
             state.isLoggedIn = false;
             state.error = action.payload;
-        }        
+        }    
     }
 });
 
 export const { fetchUserSuccess, fetchUserFailure } = userSlice.actions;
-export default userSlice.reducer;
+
+export const login = (username, password) => (dispatch) => {
+    const credentials = {
+        username: 'admin',
+        password: 'password'
+    };
+    if (username === credentials.username && password === credentials.password) {
+        const user = {
+            username: username,
+            email: 'testing@bluerobot.com',
+            avatar: 'https://placehold.co/50'
+        }
+        localStorage.setItem('user', JSON.stringify(user));
+        dispatch(fetchUserSuccess(user));
+        return true;        
+    } else {
+        dispatch(fetchUserFailure('Invalid'));
+        return false;
+    }
+}

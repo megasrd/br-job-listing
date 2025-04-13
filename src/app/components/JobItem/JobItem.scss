@@ -1,0 +1,68 @@
+.job-item {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        &--title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+        }
+        &--company {
+            font-size: 16px;
+            font-weight: 500;
+            color: #666;
+            font-style: italic;
+        }
+    }
+    &__description {
+        padding: 0x 8px;
+        &--list {
+            list-style: none; 
+        }
+        &--list-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center ;
+            gap: 8px;
+        }
+        &--list-item-label {
+            font-weight: 600;            
+        }
+        &--list-item-value {
+            color: #313131;          
+        }       
+        &--list-item-skills {
+            display: flex;
+            gap: 8px;
+        }
+        &--list-item-skill {
+            padding: 4px 8px;
+            background-color: #f0f0f0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &--apply-button {
+            margin-top: 18px;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                background-color: #0056b3;
+            }
+        } 
+    }
+}

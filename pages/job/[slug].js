@@ -1,3 +1,5 @@
+"use client";
+
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'; 
 import { useSelector } from 'react-redux';
@@ -24,15 +26,29 @@ export default function Page() {
   }
 
   return (
-    <div className="job-details">      
-      <div className="wrapper">
-        <h2> { jobPost?.title || "Untitled" } </h2>
-        <h3> { jobPost?.company || "Unknown Company" } </h3>
-        <div 
-          className='description' 
-          dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "No description") }} 
-        />
-      </div>
+    <div className="job-details">
+      {loading ? (
+        <p>Loading...</p>
+      ) : error ? (
+        <p>Error: {error}</p>
+      ) : jobPost && !loading ? (
+          <div className="job-details">      
+            <div className="job-details__wrapper">
+              <h2 className="job-details__title"> { jobPost?.title || "Untitled" } </h2>
+              <h3 className="job-details_company"> { jobPost?.company || "Unknown Company" } </h3>
+              <div className="job-details__skills">
+                  {jobPost.skills?.map((skill, index) => (
+                    <span key={index} className="job-details__skills--item">
+                      {skill}
+                    </span>
+                  ))}          
+              </div>
+              
+            </div>
+          </div>
+      ) : (
+        <p>Job post not found.</p>
+      )}
     </div>
-  );  
+  );
 }

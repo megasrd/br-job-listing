@@ -23,7 +23,15 @@ const userSlice = createSlice({
             state.isValid = false;
             state.isLoggedIn = false;
             state.error = action.payload;
-        }    
+        },
+        logout: (state) => {
+            state.isLoggedIn = false;
+            state.isValid = false;
+            state.avatar = null;
+            state.email = null;
+            state.username = null;
+            localStorage.removeItem('user');
+        }
     }
 });
 
@@ -48,3 +56,21 @@ export const login = (username, password) => (dispatch) => {
         return false;
     }
 }
+
+export const checkUser = () => (dispatch) => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+        dispatch(fetchUserSuccess(user));
+        return true;
+    } else {
+        dispatch(fetchUserFailure('Invalid'));
+        return false;
+    }
+}
+
+export const logout = () => (dispatch) => {
+    localStorage.removeItem('user');
+    dispatch(userSlice.actions.logout());
+}
+
+export default userSlice.reducer;

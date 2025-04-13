@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 
 function Initializer({ children, store }) {
     useEffect(() => {
+        console.log("Fetching jobs data...");
         //Fetch jobs data then set it.
         //dispatch intial action
         store.dispatch({ type: 'jobs/fetchJobsStart'});

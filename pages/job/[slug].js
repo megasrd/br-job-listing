@@ -17,9 +17,11 @@ export default function Page() {
   
   useEffect(() => {
     const { slug } = router.query;
-    setJobPost(value.find((job) => job.id == slug));    
-    console.log(jobPost);
-  }, []);
+    if (!loading && !error && value.length > 0) {
+      const foundJob = value.find((job) => job.id == slug);
+      setJobPost(foundJob || null);
+    }
+  }, [router.query, value, loading, error]);
 
   const sanitizeHTML = (html) => {
     return DOMPurify.sanitize(html);
@@ -43,7 +45,7 @@ export default function Page() {
                     </span>
                   ))}          
               </div>
-              
+              <div className="job-details__description" dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "") }} />
             </div>
           </div>
       ) : (

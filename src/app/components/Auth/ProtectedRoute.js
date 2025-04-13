@@ -6,7 +6,7 @@ import { checkUser } from "../../store/slices/userSlice";
 export default function ProtectedRoute({ children }) {
     const router = useRouter();
     const dispatch = useDispatch();
-    const { isLoggedIn, isValid } = useSelector((state) => state.user);
+    const { isLoggedIn } = useSelector((state) => state.user);
 
     //authentication check when component mounts
     useEffect(() => {
@@ -22,5 +22,6 @@ export default function ProtectedRoute({ children }) {
     if (!isLoggedIn) {
         return null;
     }
+
     return children;
 }

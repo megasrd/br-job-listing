@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'; 
 import { useSelector } from 'react-redux';
+import DOMPurify from 'dompurify'
 
 import "../../styles/pages/job-details.scss";
 
@@ -17,6 +18,11 @@ export default function Page() {
     setJobPost(value.find((job) => job.id == slug));    
     console.log(jobPost);
   }, []);
+
+  const sanitizeHTML = (html) => {
+    return DOMPurify.sanitize(html);
+  }
+
   return (
     <div className="job-details">      
       <div className="wrapper">
@@ -24,7 +30,7 @@ export default function Page() {
         <h3> { jobPost?.company || "Unknown Company" } </h3>
         <div 
           className='description' 
-          dangerouslySetInnerHTML={{ __html: jobPost?.description || "No description available." }} 
+          dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "No description") }} 
         />
       </div>
     </div>

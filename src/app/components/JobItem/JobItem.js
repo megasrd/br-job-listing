@@ -22,7 +22,7 @@ const JobItem = ({ id, title, company, role, experience, skills, onViewDetails }
                     </li>
                     <li className="job-item__description--list-item">
                         <span className="job-item__description--list-item-label">Experience:</span>
-                        <span className="job-item__description--list-item-value">{experience}</span>
+                        <span className="job-item__description--list-item-value">{experience}+ Years</span>
                     </li>
                     <li className="job-item__description--list-item">
                         <span className="job-item__description--list-item-label">Skills:</span>

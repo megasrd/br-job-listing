@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from './rootReducer';
 
 const makeStore = () => configureStore({
-    reducer: rootReducer
+    reducer: rootReducer,
 });
 
 export const wrapper = createWrapper(makeStore);

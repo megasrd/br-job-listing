@@ -1,0 +1,274 @@
+{
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Senior Software Engineer",
+        "company": "TechNova Solutions",
+        "role": "Engineering",
+        "experience": 5,
+        "skills": ["JavaScript", "React", "Node.js", "AWS", "GraphQL"],
+        "description": "<h3>About the Role</h3><p>We are seeking an experienced Senior Software Engineer to join our dynamic engineering team. The ideal candidate will help architect, design, and implement robust solutions for our cloud-based platform.</p><p>You'll work directly with product managers, designers, and other engineers to deliver high-quality code and tackle complex technical challenges. This position offers significant opportunity for growth and technical leadership.</p><h3>Key Responsibilities</h3><ul><li>Develop and maintain scalable frontend and backend applications</li><li>Lead architectural decisions and implement best practices</li><li>Mentor junior developers and conduct code reviews</li><li>Work with stakeholders to refine requirements and deliver technical solutions</li></ul>"
+      },
+      {
+        "id": 2,
+        "title": "Data Scientist",
+        "company": "Analytix AI",
+        "role": "Data Science",
+        "experience": 3,
+        "skills": ["Python", "TensorFlow", "SQL", "Machine Learning", "Data Visualization"],
+        "description": "<h3>About the Role</h3><p>Analytix AI is looking for a skilled Data Scientist to join our growing team. In this role, you'll apply statistical and machine learning techniques to solve complex business problems and extract actionable insights from large datasets.</p><p>You'll collaborate with cross-functional teams to develop predictive models and data-driven solutions that drive business value and innovation.</p><h3>Key Responsibilities</h3><ul><li>Build and implement machine learning models to address business challenges</li><li>Analyze large datasets and extract meaningful insights</li><li>Create compelling data visualizations to communicate findings</li><li>Collaborate with product teams to integrate AI solutions</li></ul>"
+      },
+      {
+        "id": 3,
+        "title": "UX/UI Designer",
+        "company": "Creative Digital",
+        "role": "Design",
+        "experience": 4,
+        "skills": ["Figma", "Adobe XD", "User Research", "Wireframing", "Prototyping"],
+        "description": "<h3>About the Role</h3><p>Creative Digital is seeking a talented UX/UI Designer to create intuitive and engaging user experiences for our clients. The ideal candidate combines strong design skills with a deep understanding of user-centered design principles.</p><p>You'll work closely with clients and development teams to transform business requirements into elegant design solutions that delight users and achieve business goals.</p><h3>Key Responsibilities</h3><ul><li>Create user-centered designs through wireframes, visual designs, and prototypes</li><li>Conduct user research and usability testing</li><li>Collaborate with developers to ensure design implementation fidelity</li><li>Maintain design systems and documentation</li></ul>"
+      },
+      {
+        "id": 4,
+        "title": "DevOps Engineer",
+        "company": "CloudSphere Technologies",
+        "role": "Operations",
+        "experience": 4,
+        "skills": ["Kubernetes", "Docker", "CI/CD", "Terraform", "AWS"],
+        "description": "<h3>About the Role</h3><p>CloudSphere Technologies is looking for a skilled DevOps Engineer to strengthen our infrastructure team. In this role, you'll help build and maintain our cloud infrastructure and deployment pipelines.</p><p>You'll work at the intersection of development and operations, automating processes and implementing best practices to improve system reliability, performance, and security.</p><h3>Key Responsibilities</h3><ul><li>Design and implement CI/CD pipelines for automated testing and deployment</li><li>Manage and optimize cloud infrastructure using Infrastructure as Code (IaC)</li><li>Monitor system performance and implement improvements</li><li>Collaborate with development teams to resolve infrastructure-related issues</li></ul>"
+      },
+      {
+        "id": 5,
+        "title": "Product Manager",
+        "company": "Innovate Inc.",
+        "role": "Product",
+        "experience": 5,
+        "skills": ["Product Strategy", "Agile Methodologies", "Market Research", "Data Analysis", "User Stories"],
+        "description": "<h3>About the Role</h3><p>Innovate Inc. is seeking an experienced Product Manager to lead the development and launch of new product features. The ideal candidate will have a proven track record of delivering successful products in a fast-paced environment.</p><p>You'll serve as the bridge between various stakeholders, translating business requirements and user needs into product features that drive growth and enhance user experience.</p><h3>Key Responsibilities</h3><ul><li>Define product vision, strategy, and roadmap</li><li>Gather and prioritize product requirements</li><li>Work closely with engineering, design, and marketing teams</li><li>Analyze user feedback and market trends to inform product decisions</li></ul>"
+      },
+      {
+        "id": 6,
+        "title": "Cybersecurity Analyst",
+        "company": "SecureNex",
+        "role": "Security",
+        "experience": 3,
+        "skills": ["Network Security", "Vulnerability Assessment", "Security Auditing", "Incident Response", "SIEM"],
+        "description": "<h3>About the Role</h3><p>SecureNex is looking for a Cybersecurity Analyst to help protect our systems and data from cyber threats. In this role, you'll be responsible for monitoring security systems, identifying vulnerabilities, and responding to security incidents.</p><p>You'll play a crucial role in maintaining our strong security posture and ensuring compliance with industry standards and regulations.</p><h3>Key Responsibilities</h3><ul><li>Monitor and analyze security alerts and incidents</li><li>Conduct regular vulnerability assessments and penetration testing</li><li>Implement and maintain security tools and technologies</li><li>Develop security protocols and documentation</li></ul>"
+      },
+      {
+        "id": 7,
+        "title": "Full Stack Developer",
+        "company": "WebSolutions Global",
+        "role": "Engineering",
+        "experience": 2,
+        "skills": ["JavaScript", "React", "Node.js", "MongoDB", "Express"],
+        "description": "<h3>About the Role</h3><p>WebSolutions Global is seeking a talented Full Stack Developer to join our engineering team. As a Full Stack Developer, you'll work on both frontend and backend components of our web applications.</p><p>This role offers the opportunity to work on diverse projects and technologies, collaborating closely with designers, product managers, and other developers to build innovative solutions.</p><h3>Key Responsibilities</h3><ul><li>Develop responsive and interactive web applications</li><li>Design and implement RESTful APIs and database schemas</li><li>Optimize applications for maximum speed and scalability</li><li>Collaborate with the team to establish best practices and coding standards</li></ul>"
+      },
+      {
+        "id": 8,
+        "title": "Marketing Manager",
+        "company": "BrandForge",
+        "role": "Marketing",
+        "experience": 6,
+        "skills": ["Digital Marketing", "Campaign Management", "SEO/SEM", "Social Media Strategy", "Content Marketing"],
+        "description": "<h3>About the Role</h3><p>BrandForge is looking for an experienced Marketing Manager to lead our marketing initiatives and drive brand awareness. The ideal candidate will have a strong background in digital marketing and a data-driven approach to campaign planning and execution.</p><p>You'll be responsible for developing and implementing comprehensive marketing strategies that align with our business goals and target audience needs.</p><h3>Key Responsibilities</h3><ul><li>Develop and execute marketing campaigns across multiple channels</li><li>Analyze marketing metrics and optimize strategies accordingly</li><li>Manage social media presence and content calendar</li><li>Collaborate with the sales team to align marketing efforts with sales objectives</li></ul>"
+      },
+      {
+        "id": 9,
+        "title": "Mobile App Developer",
+        "company": "AppGenius",
+        "role": "Engineering",
+        "experience": 3,
+        "skills": ["Swift", "Kotlin", "React Native", "Firebase", "Mobile UI Design"],
+        "description": "<h3>About the Role</h3><p>AppGenius is seeking a talented Mobile App Developer to create innovative and user-friendly mobile applications. In this role, you'll be responsible for designing, building, and maintaining high-performance, reliable mobile apps for iOS and Android platforms.</p><p>You'll work closely with designers, product managers, and backend developers to create seamless mobile experiences that meet user needs and business requirements.</p><h3>Key Responsibilities</h3><ul><li>Develop native or cross-platform mobile applications</li><li>Implement responsive user interfaces and intuitive interactions</li><li>Integrate with backend services and APIs</li><li>Optimize applications for performance and usability on different devices</li></ul>"
+      },
+      {
+        "id": 10,
+        "title": "Business Analyst",
+        "company": "Strategic Insights Corp",
+        "role": "Analysis",
+        "experience": 4,
+        "skills": ["Requirements Gathering", "Process Modeling", "Data Analysis", "SQL", "Stakeholder Management"],
+        "description": "<h3>About the Role</h3><p>Strategic Insights Corp is looking for a skilled Business Analyst to bridge the gap between our business stakeholders and technology teams. In this role, you'll analyze business processes, identify opportunities for improvement, and translate business requirements into technical specifications.</p><p>You'll play a crucial role in ensuring that our technology solutions align with business needs and deliver maximum value.</p><h3>Key Responsibilities</h3><ul><li>Gather and document business requirements through stakeholder interviews</li><li>Create process models, user stories, and use cases</li><li>Analyze data to identify trends and opportunities</li><li>Facilitate communication between business and technical teams</li></ul>"
+      },
+      {
+        "id": 11,
+        "title": "Cloud Architect",
+        "company": "SkywardTech",
+        "role": "Architecture",
+        "experience": 7,
+        "skills": ["AWS", "Azure", "Kubernetes", "Microservices", "Serverless"],
+        "description": "<h3>About the Role</h3><p>SkywardTech is seeking an experienced Cloud Architect to design and implement scalable, secure, and resilient cloud solutions. The ideal candidate will have a deep understanding of cloud platforms and best practices for cloud migration and optimization.</p><p>You'll lead architectural decisions and collaborate with engineering teams to implement cloud strategies that align with business goals and technical requirements.</p><h3>Key Responsibilities</h3><ul><li>Design and implement cloud infrastructure and services</li><li>Develop cloud migration strategies and roadmaps</li><li>Establish architectural guidelines and best practices</li><li>Evaluate and recommend cloud technologies and services</li></ul>"
+      },
+      {
+        "id": 12,
+        "title": "Human Resources Manager",
+        "company": "PeopleFirst Inc.",
+        "role": "HR",
+        "experience": 5,
+        "skills": ["Recruitment", "Employee Relations", "Performance Management", "HR Policies", "Training & Development"],
+        "description": "<h3>About the Role</h3><p>PeopleFirst Inc. is looking for an experienced Human Resources Manager to lead our HR initiatives and foster a positive workplace culture. In this role, you'll oversee all aspects of HR operations, including recruitment, employee relations, and performance management.</p><p>You'll collaborate with leadership to align HR strategies with business objectives and implement programs that attract, develop, and retain top talent.</p><h3>Key Responsibilities</h3><ul><li>Develop and implement HR policies and procedures</li><li>Manage the full recruitment lifecycle</li><li>Oversee employee performance and development programs</li><li>Address employee relations issues and concerns</li></ul>"
+      },
+      {
+        "id": 13,
+        "title": "Financial Analyst",
+        "company": "Precision Capital",
+        "role": "Finance",
+        "experience": 3,
+        "skills": ["Financial Modeling", "Forecasting", "Budgeting", "Excel", "Data Analysis"],
+        "description": "<h3>About the Role</h3><p>Precision Capital is seeking a detail-oriented Financial Analyst to join our finance team. In this role, you'll analyze financial data, prepare reports, and provide insights to support strategic decision-making.</p><p>You'll work with various stakeholders to track financial performance, identify trends, and develop forecasts that inform business planning and investments.</p><h3>Key Responsibilities</h3><ul><li>Prepare financial forecasts, budgets, and analytical reports</li><li>Analyze financial data and identify trends and opportunities</li><li>Develop financial models to assess business performance</li><li>Support leadership with financial insights and recommendations</li></ul>"
+      },
+      {
+        "id": 14,
+        "title": "Content Strategist",
+        "company": "NarrativeHub",
+        "role": "Marketing",
+        "experience": 4,
+        "skills": ["Content Planning", "SEO", "Copywriting", "Editorial Calendar", "Content Analytics"],
+        "description": "<h3>About the Role</h3><p>NarrativeHub is looking for a talented Content Strategist to develop and implement content strategies that engage audiences and drive business results. The ideal candidate will have a strong understanding of digital content, SEO, and audience engagement.</p><p>You'll be responsible for creating and managing a content calendar, producing high-quality content, and measuring content performance to continuously improve our content marketing efforts.</p><h3>Key Responsibilities</h3><ul><li>Develop and implement content strategies aligned with business goals</li><li>Create and maintain an editorial calendar</li><li>Produce and edit engaging content across various formats</li><li>Analyze content performance metrics and optimize strategies</li></ul>"
+      },
+      {
+        "id": 15,
+        "title": "Quality Assurance Engineer",
+        "company": "QualityTech",
+        "role": "QA",
+        "experience": 2,
+        "skills": ["Manual Testing", "Automated Testing", "Test Planning", "JIRA", "Selenium"],
+        "description": "<h3>About the Role</h3><p>QualityTech is seeking a detail-oriented Quality Assurance Engineer to ensure the quality and reliability of our software products. In this role, you'll design and execute test plans, identify defects, and work with development teams to resolve issues.</p><p>You'll play a crucial role in our software development lifecycle, helping to deliver high-quality products that meet customer expectations and business requirements.</p><h3>Key Responsibilities</h3><ul><li>Create and execute test plans and test cases</li><li>Develop and maintain automated test scripts</li><li>Track and report defects using issue tracking systems</li><li>Collaborate with developers to resolve quality issues</li></ul>"
+      },
+      {
+        "id": 16,
+        "title": "Project Manager",
+        "company": "DeliverEdge",
+        "role": "Management",
+        "experience": 5,
+        "skills": ["Project Planning", "Agile/Scrum", "Risk Management", "Stakeholder Management", "Budgeting"],
+        "description": "<h3>About the Role</h3><p>DeliverEdge is looking for an experienced Project Manager to lead cross-functional teams and deliver successful projects on time and within budget. The ideal candidate will have a strong track record of managing complex projects and navigating challenging constraints.</p><p>You'll be responsible for planning, executing, and closing projects while ensuring alignment with business objectives and stakeholder expectations.</p><h3>Key Responsibilities</h3><ul><li>Develop project plans, timelines, and resource allocations</li><li>Lead cross-functional teams through project execution</li><li>Monitor project progress and manage risks and issues</li><li>Communicate project status to stakeholders and leadership</li></ul>"
+      },
+      {
+        "id": 17,
+        "title": "Machine Learning Engineer",
+        "company": "AI Innovations",
+        "role": "Engineering",
+        "experience": 4,
+        "skills": ["Python", "TensorFlow", "PyTorch", "Deep Learning", "NLP"],
+        "description": "<h3>About the Role</h3><p>AI Innovations is seeking a talented Machine Learning Engineer to design and implement machine learning systems that solve complex business problems. In this role, you'll work on the full lifecycle of machine learning projects, from data preparation to model deployment.</p><p>You'll collaborate with data scientists, engineers, and product managers to develop innovative AI solutions that drive business value and enhance user experiences.</p><h3>Key Responsibilities</h3><ul><li>Design and implement machine learning algorithms and models</li><li>Prepare and preprocess datasets for training and testing</li><li>Deploy models to production environments</li><li>Monitor and optimize model performance</li></ul>"
+      },
+      {
+        "id": 18,
+        "title": "Sales Representative",
+        "company": "RevGen Partners",
+        "role": "Sales",
+        "experience": 2,
+        "skills": ["Relationship Building", "Negotiation", "CRM", "Prospecting", "Solution Selling"],
+        "description": "<h3>About the Role</h3><p>RevGen Partners is looking for a motivated Sales Representative to identify and pursue new business opportunities. The ideal candidate will have strong communication skills, a customer-focused approach, and a track record of meeting or exceeding sales targets.</p><p>You'll be responsible for generating leads, nurturing relationships, and closing deals that contribute to our revenue growth and market expansion.</p><h3>Key Responsibilities</h3><ul><li>Identify and qualify potential customers</li><li>Present and demonstrate product offerings to prospects</li><li>Negotiate terms and close sales</li><li>Maintain customer relationships and identify upselling opportunities</li></ul>"
+      },
+      {
+        "id": 19,
+        "title": "Database Administrator",
+        "company": "DataCore Systems",
+        "role": "Engineering",
+        "experience": 5,
+        "skills": ["SQL", "Oracle", "PostgreSQL", "Database Design", "Performance Tuning"],
+        "description": "<h3>About the Role</h3><p>DataCore Systems is seeking an experienced Database Administrator to design, implement, and maintain our database systems. In this role, you'll ensure the performance, security, and availability of our databases while supporting the needs of our applications and users.</p><p>You'll work closely with development teams to optimize database designs, implement best practices, and troubleshoot issues that affect database performance and reliability.</p><h3>Key Responsibilities</h3><ul><li>Design, implement, and maintain database structures</li><li>Monitor and optimize database performance</li><li>Implement backup and recovery strategies</li><li>Ensure data security and compliance with regulations</li></ul>"
+      },
+      {
+        "id": 20,
+        "title": "Customer Success Manager",
+        "company": "ClientFirst Solutions",
+        "role": "Customer Success",
+        "experience": 3,
+        "skills": ["Client Relationship Management", "Onboarding", "Retention Strategies", "Product Knowledge", "Problem Solving"],
+        "description": "<h3>About the Role</h3><p>ClientFirst Solutions is looking for a dedicated Customer Success Manager to ensure our clients achieve their desired outcomes with our products and services. The ideal candidate will have strong relationship-building skills and a passion for helping customers succeed.</p><p>You'll serve as the primary point of contact for assigned clients, guiding them through the onboarding process, addressing their needs, and identifying opportunities to expand the relationship.</p><h3>Key Responsibilities</h3><ul><li>Develop and maintain strong relationships with assigned clients</li><li>Manage customer onboarding and implementation processes</li><li>Identify and address customer needs and concerns</li><li>Collaborate with internal teams to resolve customer issues</li></ul>"
+      },
+      {
+        "id": 21,
+        "title": "Network Engineer",
+        "company": "ConnectiveTech",
+        "role": "IT",
+        "experience": 4,
+        "skills": ["Network Architecture", "Routing & Switching", "Firewalls", "VPN", "Troubleshooting"],
+        "description": "<h3>About the Role</h3><p>ConnectiveTech is seeking a skilled Network Engineer to design, implement, and maintain our network infrastructure. In this role, you'll ensure the reliability, performance, and security of our network systems, supporting the connectivity needs of our organization.</p><p>You'll work closely with IT teams to plan network upgrades, implement security measures, and troubleshoot issues that affect network operations.</p><h3>Key Responsibilities</h3><ul><li>Design and implement network solutions</li><li>Configure and maintain network devices (routers, switches, firewalls)</li><li>Monitor network performance and troubleshoot issues</li><li>Implement network security measures and best practices</li></ul>"
+      },
+      {
+        "id": 22,
+        "title": "Content Writer",
+        "company": "WordCraft Media",
+        "role": "Content",
+        "experience": 2,
+        "skills": ["Copywriting", "SEO", "Research", "Editing", "Content Strategy"],
+        "description": "<h3>About the Role</h3><p>WordCraft Media is looking for a talented Content Writer to create engaging, informative, and SEO-friendly content for various platforms and audiences. The ideal candidate will have excellent writing skills, attention to detail, and the ability to adapt their writing style to different topics and formats.</p><p>You'll be responsible for researching topics, creating original content, and collaborating with team members to ensure content aligns with brand voice and marketing objectives.</p><h3>Key Responsibilities</h3><ul><li>Create high-quality content for websites, blogs, social media, etc.</li><li>Research industry topics and trends to inform content creation</li><li>Optimize content for search engines and readability</li><li>Edit and proofread content for clarity and accuracy</li></ul>"
+      },
+      {
+        "id": 23,
+        "title": "Supply Chain Manager",
+        "company": "LogisticsPlus",
+        "role": "Operations",
+        "experience": 6,
+        "skills": ["Supply Chain Optimization", "Inventory Management", "Vendor Management", "Demand Planning", "Logistics"],
+        "description": "<h3>About the Role</h3><p>LogisticsPlus is seeking an experienced Supply Chain Manager to optimize our supply chain operations and enhance our efficiency and cost-effectiveness. The ideal candidate will have a strong background in supply chain management and a strategic approach to process improvement.</p><p>You'll be responsible for managing relationships with suppliers, optimizing inventory levels, and ensuring the timely delivery of products to customers while minimizing costs and maximizing efficiency.</p><h3>Key Responsibilities</h3><ul><li>Develop and implement supply chain strategies and processes</li><li>Manage supplier relationships and procurement activities</li><li>Optimize inventory levels and warehouse operations</li><li>Analyze supply chain metrics and identify improvement opportunities</li></ul>"
+      },
+      {
+        "id": 24,
+        "title": "Front-End Developer",
+        "company": "VisualWeb",
+        "role": "Engineering",
+        "experience": 3,
+        "skills": ["HTML/CSS", "JavaScript", "React", "UI/UX", "Responsive Design"],
+        "description": "<h3>About the Role</h3><p>VisualWeb is looking for a skilled Front-End Developer to create engaging and intuitive user interfaces for our web applications. The ideal candidate will have a strong understanding of modern front-end technologies and a keen eye for design details.</p><p>You'll work closely with designers and back-end developers to implement responsive, accessible, and performant user interfaces that enhance the user experience and meet business requirements.</p><h3>Key Responsibilities</h3><ul><li>Implement responsive and interactive user interfaces</li><li>Translate design mockups into functional code</li><li>Optimize applications for maximum speed and scalability</li><li>Ensure cross-browser compatibility and accessibility compliance</li></ul>"
+      },
+      {
+        "id": 25,
+        "title": "Technical Support Specialist",
+        "company": "HelpDesk Heroes",
+        "role": "Support",
+        "experience": 2,
+        "skills": ["Troubleshooting", "Customer Service", "IT Knowledge", "Communication", "Problem Solving"],
+        "description": "<h3>About the Role</h3><p>HelpDesk Heroes is seeking a Technical Support Specialist to provide excellent technical assistance to our customers. The ideal candidate will have strong troubleshooting skills, patience, and the ability to explain technical concepts in simple terms.</p><p>You'll be responsible for addressing customer inquiries, diagnosing technical issues, and providing solutions that ensure a positive customer experience and high levels of satisfaction.</p><h3>Key Responsibilities</h3><ul><li>Respond to customer inquiries via phone, email, and chat</li><li>Troubleshoot and resolve technical issues</li><li>Document support interactions and solutions</li><li>Identify recurring issues and suggest improvements</li></ul>"
+      },
+      {
+        "id": 26,
+        "title": "SEO Specialist",
+        "company": "RankWise Digital",
+        "role": "Marketing",
+        "experience": 3,
+        "skills": ["Keyword Research", "On-Page SEO", "Off-Page SEO", "Analytics", "Content Optimization"],
+        "description": "<h3>About the Role</h3><p>RankWise Digital is looking for a skilled SEO Specialist to improve our clients' search engine visibility and organic traffic. The ideal candidate will have a deep understanding of search engine algorithms, SEO best practices, and analytical tools.</p><p>You'll be responsible for developing and implementing SEO strategies, conducting keyword research, and analyzing performance metrics to continuously improve search rankings and website traffic.</p><h3>Key Responsibilities</h3><ul><li>Develop and implement comprehensive SEO strategies</li><li>Conduct keyword research and competitive analysis</li><li>Optimize website content and structure for search engines</li><li>Monitor and analyze SEO performance metrics</li></ul>"
+      },
+      {
+        "id": 27,
+        "title": "Operations Manager",
+        "company": "Streamline Solutions",
+        "role": "Operations",
+        "experience": 5,
+        "skills": ["Process Improvement", "Team Leadership", "Resource Management", "Strategic Planning", "Problem Solving"],
+        "description": "<h3>About the Role</h3><p>Streamline Solutions is seeking an experienced Operations Manager to oversee our day-to-day operations and drive operational excellence. The ideal candidate will have a strong background in operations management and a proven track record of implementing efficient processes and systems.</p><p>You'll be responsible for managing operational resources, improving processes, and ensuring that operations align with business strategies and objectives.</p><h3>Key Responsibilities</h3><ul><li>Oversee daily operations and ensure efficiency and effectiveness</li><li>Develop and implement operational strategies and processes</li><li>Manage operational budgets and resources</li><li>Identify and implement process improvements</li></ul>"
+      },
+      {
+        "id": 28,
+        "title": "Back-End Developer",
+        "company": "ServerStack",
+        "role": "Engineering",
+        "experience": 4,
+        "skills": ["Node.js", "Python", "SQL", "APIs", "Microservices"],
+        "description": "<h3>About the Role</h3><p>ServerStack is looking for a skilled Back-End Developer to design, build, and maintain the server-side components of our applications. The ideal candidate will have experience with server-side technologies, databases, and API development.</p><p>You'll work closely with front-end developers and other team members to create robust, scalable, and secure back-end solutions that power our applications and services.</p><h3>Key Responsibilities</h3><ul><li>Design and implement server-side logic and databases</li><li>Develop and maintain RESTful APIs</li><li>Optimize applications for performance and scalability</li><li>Implement security and data protection measures</li></ul>"
+      },
+      {
+        "id": 29,
+        "title": "Graphic Designer",
+        "company": "CreativeVision",
+        "role": "Design",
+        "experience": 3,
+        "skills": ["Adobe Creative Suite", "Typography", "Brand Identity", "Illustration", "Layout Design"],
+        "description": "<h3>About the Role</h3><p>CreativeVision is seeking a talented Graphic Designer to create visually compelling designs for various digital and print media. The ideal candidate will have a strong portfolio demonstrating creativity, versatility, and a keen eye for design principles.</p><p>You'll collaborate with marketing teams, clients, and other designers to develop visual concepts and assets that effectively communicate messages and enhance brand identities.</p><h3>Key Responsibilities</h3><ul><li>Create visual designs for digital and print media</li><li>Develop brand identity elements and guidelines</li><li>Collaborate with team members to align designs with marketing strategies</li><li>Ensure consistency and quality across all design deliverables</li></ul>"
+      },
+      {
+        "id": 30,
+        "title": "Social Media Manager",
+        "company": "Connect Media",
+        "role": "Marketing",
+        "experience": 3,
+        "skills": ["Social Media Strategy", "Content Creation", "Community Management", "Analytics", "Campaign Management"],
+        "description": "<h3>About the Role</h3><p>Connect Media is looking for a creative and data-driven Social Media Manager to develop and implement social media strategies that boost brand awareness and engagement. The ideal candidate will have experience managing social media platforms, creating engaging content, and analyzing performance metrics.</p><p>You'll be responsible for growing our social media presence, engaging with our audience, and leveraging social channels to achieve marketing objectives and drive business results.</p><h3>Key Responsibilities</h3><ul><li>Develop and implement social media strategies across platforms</li><li>Create and curate engaging content for social channels</li><li>Monitor and respond to audience interactions</li><li>Analyze social media metrics and optimize strategies accordingly</li></ul>"
+      }
+    ]
+  }

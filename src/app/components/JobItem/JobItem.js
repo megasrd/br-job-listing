@@ -2,7 +2,12 @@
 
 import './JobItem.scss';
 
-const JobItem = ({ title, company, role, experience, skills }) => {
+const JobItem = ({ id, title, company, role, experience, skills, onViewDetails }) => {
+
+    const handleViewDetails = () => {
+        onViewDetails(id);
+    }
+
     return (
         <div className="job-item">
             <div class="job-item__header">
@@ -30,7 +35,7 @@ const JobItem = ({ title, company, role, experience, skills }) => {
                         </span>
                     </li>
                 </ul>
-                <button className="job-item__description--apply-button">
+                <button onClick={handleViewDetails} className="job-item__description--apply-button">
                     View details
                 </button>
             </div>

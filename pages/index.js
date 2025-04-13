@@ -1,16 +1,21 @@
 "use client";
 
 import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
 import JobItem from '../src/app/components/JobItem/JobItem.js';
 
 import '../styles/pages/index.scss';
 
 export default function Home() {
 
+  const router = useRouter();
+
   let { value, loading, error } = useSelector((state) => state.jobs);
 
-  console.log(value)
+  const routeToDetailsPage = (id) => {
+    router.push(`/job/${id}`);
+  }
 
   return (
     <>
@@ -18,8 +23,10 @@ export default function Home() {
       <p className='description'> Find the best job for you </p>
       <div className="job-list">
         { !loading && value.map((job, key) => (
-          <JobItem key={key} title={job.title} company={job.company} role={job.role} experience={job.experience} skills={job.skills} />
-        )) }        
+          <JobItem onViewDetails={ () => { routeToDetailsPage(job.id) } } key={key} title={job.title} company={job.company} role={job.role} experience={job.experience} skills={job.skills} />
+        )) }       
+        { loading && <div className="loading">Loading...</div> }
+        { error && <div className="error">{error}</div> } 
       </div>
     </>
   );

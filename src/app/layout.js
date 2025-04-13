@@ -1,7 +1,10 @@
+
+
 import '../../styles/global.scss';
 
 import { ReduxProvider } from './provider.js';
 import NavigationBar from "./components/NavigationBar/NavigationBar.js";
+
 
 export default function Layout({ children }) {
   return (

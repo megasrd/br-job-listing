@@ -10,7 +10,7 @@ const JobItem = ({ id, title, company, role, experience, skills, onViewDetails }
 
     return (
         <div className="job-item">
-            <div class="job-item__header">
+            <div className="job-item__header">
                 <h3 className="job-item__header--title">{title}</h3>
                 <span className="job-item__header--company">{company}</span>            
             </div>            

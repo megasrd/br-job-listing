@@ -1,0 +1,25 @@
+.navigation-bar {
+  padding: 16px 32px;
+  background-color: #181818;
+  color: white;
+  &__wrapper {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__item {
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #f0f0f0;
+      text-decoration: underline;
+    }
+    &.active {
+      color: #ffcc00;
+      font-weight: 700;
+    }
+  }
+}

@@ -38,8 +38,6 @@ $breakpoints: (
     margin: 0 auto;
     padding-left: $gutter-width;
     padding-right: $gutter-width;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 // Row
@@ -69,4 +67,9 @@ $breakpoints: (
             }
         }
     }
+}
+
+.page-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }

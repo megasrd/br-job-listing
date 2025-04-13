@@ -19,6 +19,9 @@ const jobsSlice = createSlice({
         fetchJobsFailure(state, action) {
             state.loading = false;
             state.error = action.payload;
-        },
-    },
+        }
+    }
 });
+
+export const { fetchJobsStart, fetchJobsSuccess, fetchJobsFailure } = jobsSlice.actions;
+export default jobsSlice.reducer;

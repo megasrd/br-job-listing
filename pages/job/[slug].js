@@ -2,6 +2,8 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'; 
 import { useSelector } from 'react-redux';
 
+import "../../styles/pages/job-details.scss";
+
 export default function Page() {
   const router = useRouter();
   // Retrive relevant job post from the store.
@@ -13,10 +15,18 @@ export default function Page() {
   useEffect(() => {
     const { slug } = router.query;
     setJobPost(value.find((job) => job.id == slug));    
+    console.log(jobPost);
   }, []);
   return (
-    <>
-      
-    </>
+    <div className="job-details">      
+      <div className="wrapper">
+        <h2> { jobPost?.title || "Untitled" } </h2>
+        <h3> { jobPost?.company || "Unknown Company" } </h3>
+        <div 
+          className='description' 
+          dangerouslySetInnerHTML={{ __html: jobPost?.description || "No description available." }} 
+        />
+      </div>
+    </div>
   );  
 }

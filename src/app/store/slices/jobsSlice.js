@@ -11,6 +11,14 @@ const jobsSlice = createSlice({
         fetchJobsStart(state) {
             state.loading = true;
             state.error = null;
-        }
+        },
+        fetchJobsSuccess(state, action) {
+            state.loading = false;
+            state.value = action.payload;
+        },
+        fetchJobsFailure(state, action) {
+            state.loading = false;
+            state.error = action.payload;
+        },
     },
 });

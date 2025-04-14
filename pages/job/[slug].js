@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'; 
 import { useSelector } from 'react-redux';
-import DOMPurify from 'dompurify'
+import DOMPurify from 'isomorphic-dompurify'
 
 import "../../styles/pages/job-details.scss";
 

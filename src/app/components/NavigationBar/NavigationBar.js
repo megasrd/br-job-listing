@@ -1,7 +1,6 @@
 'use client';
 
 import './NavigationBar.scss';
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import { useDispatch, useSelector } from 'react-redux';

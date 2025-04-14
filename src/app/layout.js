@@ -1,10 +1,8 @@
 "use client";
 
-import '../../styles/global.scss';
-
 import { useEffect } from 'react';
 import { checkUser } from "../app/store/slices/userSlice";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import NavigationBar from "./components/NavigationBar/NavigationBar.js";
 
 export default function Layout({ children }) {
@@ -12,7 +10,7 @@ export default function Layout({ children }) {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(checkUser())
-  }, []);
+  }, [dispatch]);
 
   return (   
     <>

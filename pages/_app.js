@@ -1,3 +1,5 @@
+import '../styles/global.scss'
+
 import Layout from "../src/app/layout";
 import { ReduxProvider } from "../src/app/provider";
 import { wrapper } from "../src/app/store/index";

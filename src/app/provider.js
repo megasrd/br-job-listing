@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import { Provider } from 'react-redux';
+import { Provider, useDispatch } from 'react-redux';
+import { checkUser } from "../app/store/slices/userSlice";
 
 function Initializer({ children, store }) {
     useEffect(() => {
@@ -18,13 +19,28 @@ function Initializer({ children, store }) {
                 store.dispatch({ type: 'jobs/fetchJobsFailure', payload: error.message });
             });
     }, []);
-    return <Provider store={store}>{children}</Provider>;
+    return (
+        <>
+            {children}
+        </>
+    );
+}
+
+function CheckLogin (){
+    // Check if user is logged in on every page load
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(checkUser())
+    }, [dispatch]);   
 }
 
 export function ReduxProvider({ children, store }) {
     return (
-        <Initializer store={store}> 
-            { children }
-        </Initializer>
+        <Provider store={store}>
+            <CheckLogin></CheckLogin>
+            <Initializer store={store}> 
+                { children }
+            </Initializer>            
+        </Provider>
     )
 }

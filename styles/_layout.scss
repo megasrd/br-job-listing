@@ -1,4 +1,5 @@
 @use "sass:math";  // Import math module for percentage and division
+@use "sass:map";  // Import map module for working with maps
 
 // Variables
 $grid-columns: 12;

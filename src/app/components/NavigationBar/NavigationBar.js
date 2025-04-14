@@ -1,6 +1,6 @@
 'use client';
 
-import './NavigationBar.scss';
+import styles from './NavigationBar.module.scss';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import { useDispatch, useSelector } from 'react-redux';
@@ -24,17 +24,17 @@ const NavigationBar = () => {
     };
 
     return (
-        <nav className="navigation-bar">
-            <ul className="container navigation-bar__wrapper">
-                <Link href="/" className={`navigation-bar__item ${pathname == '/' ? 'active' : ''}`}> Find Jobs </Link>
-                <Link href="/new-job" className={`navigation-bar__item ${pathname == '/new-job' ? 'active' : ''}`}> Post A New Job </Link>
-                { isLoggedIn && <div className="navigation-bar__user-details"> 
-                    <img className="navigation-bar__user-details--avatar" width="32" src={avatar} />
-                    <label title={email} className="navigation-bar__user-details--username"> { username } </label>
-                    <a onClick={ () => { handleLogout() } } className="navigation-bar__item navigation-bar__logout"> Logout </a>
+        <nav className={styles['navigation-bar']}>
+            <ul className={`${styles.container} ${styles['navigation-bar__wrapper']}`}>
+                <Link href="/" className={`${styles['navigation-bar__item']} ${pathname == '/' ? styles.active : ''}`}> Find Jobs </Link>
+                <Link href="/new-job" className={`${styles['navigation-bar__item']} ${pathname == '/new-job' ? styles.active : ''}`}> Post A New Job </Link>
+                { isLoggedIn && <div className={styles['navigation-bar__user-details']}> 
+                    <img className={styles['navigation-bar__user-details--avatar']} width="32" src={avatar} />
+                    <label title={email} className={styles['navigation-bar__user-details--username']}> { username } </label>
+                    <a onClick={ () => { handleLogout() } } className={`${styles['navigation-bar__item']} ${styles['navigation-bar__logout']}`}> Logout </a>
                 </div> }
-                { !isLoggedIn && <div className="navigation-bar__user-details">
-                    <Link href="/login" className={`navigation-bar__item ${pathname == '/login' ? 'active' : ''}`}> Login </Link>
+                { !isLoggedIn && <div className={styles['navigation-bar__user-details']}>
+                    <Link href="/login" className={`${styles['navigation-bar__item']} ${pathname == '/login' ? styles.active : ''}`}> Login </Link>
                 </div>}
             </ul>
         </nav>

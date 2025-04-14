@@ -25,7 +25,7 @@ const NavigationBar = () => {
 
     return (
         <nav className={styles['navigation-bar']}>
-            <ul className={`${styles.container} ${styles['navigation-bar__wrapper']}`}>
+            <ul className={`container ${styles['navigation-bar__wrapper']}`}>
                 <Link href="/" className={`${styles['navigation-bar__item']} ${pathname == '/' ? styles.active : ''}`}> Find Jobs </Link>
                 <Link href="/new-job" className={`${styles['navigation-bar__item']} ${pathname == '/new-job' ? styles.active : ''}`}> Post A New Job </Link>
                 { isLoggedIn && <div className={styles['navigation-bar__user-details']}> 

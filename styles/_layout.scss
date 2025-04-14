@@ -1,75 +1,80 @@
+@use "sass:math";  // Import math module for percentage and division
+
 // Variables
 $grid-columns: 12;
 $gutter-width: 1rem;
 
 // Breakpoints
 $breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
 );
 
 // Mixins
 @mixin make-col($size) {
-    flex: 0 0 auto;
-    width: percentage($size / $grid-columns);
+  flex: 0 0 auto;
+  width: math.percentage(math.div($size, $grid-columns));  // Use namespaced math functions
 }
 
 @mixin make-gutter {
-    padding-left: $gutter-width / 2;
-    padding-right: $gutter-width / 2;
+  padding-inline: $gutter-width * 0.5;
 }
 
 @mixin media-breakpoint-up($breakpoint) {
-    $min-width: map-get($breakpoints, $breakpoint);
-    @if $min-width != null {
-        @media (min-width: $min-width) {
-            @content;
-        }
+  $min-width: map-get($breakpoints, $breakpoint);
+  @if $min-width != null {
+    @media (min-width: $min-width) {
+      @content;
     }
+  }
 }
 
 // Grid Container
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: $gutter-width;
-    padding-right: $gutter-width;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $gutter-width;
+}
+
+// Container fluid variant
+.container-fluid {
+  width: 100%;
+  padding-inline: $gutter-width;
 }
 
 // Row
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -($gutter-width / 2);
-    margin-right: -($gutter-width / 2);
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -($gutter-width * 0.5);
 }
 
 // Columns
 .col {
-    @include make-gutter;
-    flex: 1 0 0;
-    max-width: 100%;
+  @include make-gutter;
+  flex: 1 0 0%;
+  max-width: 100%;
 }
 
 @for $i from 1 through $grid-columns {
-    .col-#{$i} {
-        @include make-col($i);
-    }
+  .col-#{$i} {
+    @include make-col($i);
+  }
 
-    @each $breakpoint, $min-width in $breakpoints {
-        @include media-breakpoint-up($breakpoint) {
-            .col-#{$breakpoint}-#{$i} {
-                @include make-col($i);
-            }
-        }
+  @each $breakpoint, $min-width in $breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+      .col-#{$breakpoint}-#{$i} {
+        @include make-col($i);
+      }
     }
+  }
 }
 
 .page-wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  padding-block: 1.5rem;
 }

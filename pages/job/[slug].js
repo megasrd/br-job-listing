@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'; 
 import { useSelector } from 'react-redux';
@@ -28,29 +29,32 @@ export default function Page() {
   }
 
   return (
-    <div className="job-details">
-      {loading ? (
-        <p>Loading...</p>
-      ) : error ? (
-        <p>Error: {error}</p>
-      ) : jobPost && !loading ? (
-          <div className="job-details">      
-            <div className="job-details__wrapper">
-              <h2 className="job-details__title"> { jobPost?.title || "Untitled" } </h2>
-              <h3 className="job-details_company"> { jobPost?.company || "Unknown Company" } </h3>
-              <div className="job-details__skills">
-                  {jobPost.skills?.map((skill, index) => (
-                    <span key={index} className="job-details__skills--item">
-                      {skill}
-                    </span>
-                  ))}          
+    <>      
+      <div className="job-details">
+        <Link href="/" className="job-details__back"> Back to jobs listing </Link>
+        {loading ? (
+          <p>Loading...</p>
+        ) : error ? (
+          <p>Error: {error}</p>
+        ) : jobPost && !loading ? (
+            <div className="job-details">      
+              <div className="job-details__wrapper">
+                <h2 className="job-details__title"> { jobPost?.title || "Untitled" } </h2>
+                <h3 className="job-details_company"> { jobPost?.company || "Unknown Company" } </h3>
+                <div className="job-details__skills">
+                    {jobPost.skills?.map((skill, index) => (
+                      <span key={index} className="job-details__skills--item">
+                        {skill}
+                      </span>
+                    ))}          
+                </div>
+                <div className="job-details__description" dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "") }} />
               </div>
-              <div className="job-details__description" dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "") }} />
             </div>
-          </div>
-      ) : (
-        <p>Job post not found.</p>
-      )}
-    </div>
+        ) : (
+          <p>Job post not found.</p>
+        )}
+      </div>    
+    </>
   );
 }

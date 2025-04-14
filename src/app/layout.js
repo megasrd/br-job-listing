@@ -1,6 +1,5 @@
 "use client";
 
-
 import '../../styles/global.scss';
 
 import { useEffect } from 'react';

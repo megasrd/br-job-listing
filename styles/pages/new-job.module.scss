@@ -5,7 +5,7 @@
     margin-bottom: 2rem;
 }
 
-.job-form {
+.jobForm {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
@@ -13,7 +13,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    .form-group {
+    .formGroup {
         margin-bottom: 1.5rem;
 
         label {
@@ -23,7 +23,7 @@
             color: #444;
         }
 
-        .form-input {
+        .formInput {
             width: 100%;
             padding: 0.75rem;
             border: 1px solid #ddd;
@@ -43,7 +43,7 @@
         }
     }
 
-    .submit-btn {
+    .submitBtn {
         width: 100%;
         padding: 1rem;
         background-color: #007bff;

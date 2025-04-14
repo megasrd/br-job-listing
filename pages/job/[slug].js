@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import DOMPurify from 'isomorphic-dompurify'
 
-import "../../styles/pages/job-details.scss";
+import styles from  "../../styles/pages/job-details.module.scss";
 
 export default function Page() {
   const router = useRouter();
@@ -30,25 +30,25 @@ export default function Page() {
 
   return (
     <>      
-      <div className="job-details">
-        <Link href="/" className="job-details__back"> Back to jobs listing </Link>
+      <div className={styles.jobDetails}>
+        <Link href="/" className={styles.jobDetails__back}> Back to jobs listing </Link>
         {loading ? (
           <p>Loading...</p>
         ) : error ? (
           <p>Error: {error}</p>
         ) : jobPost && !loading ? (
-            <div className="job-details">      
-              <div className="job-details__wrapper">
-                <h2 className="job-details__title"> { jobPost?.title || "Untitled" } </h2>
-                <h3 className="job-details_company"> { jobPost?.company || "Unknown Company" } </h3>
-                <div className="job-details__skills">
+            <div className={styles.jobDetails}>      
+              <div className={styles.jobDetails__wrapper}>
+                <h2 className={styles.jobDetails__title}> { jobPost?.title || "Untitled" } </h2>
+                <h3 className={styles.jobDetails_company}> { jobPost?.company || "Unknown Company" } </h3>
+                <div className={styles.jobDetails__skills}>
                     {jobPost.skills?.map((skill, index) => (
-                      <span key={index} className="job-details__skills--item">
+                      <span key={index} className={styles.jobDetails__skills_item}>
                         {skill}
                       </span>
                     ))}          
                 </div>
-                <div className="job-details__description" dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "") }} />
+                <div className={styles.jobDetails__description} dangerouslySetInnerHTML={{ __html: sanitizeHTML(jobPost?.description || "") }} />
               </div>
             </div>
         ) : (

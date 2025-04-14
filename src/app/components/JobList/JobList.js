@@ -1,5 +1,7 @@
 "use client";
 
+import styles from './JobList.module.scss';
+
 import JobItem from '../JobItem/JobItem.js';
 
 const JobList = ({jobs, onViewDetails}) => {
@@ -13,7 +15,7 @@ const JobList = ({jobs, onViewDetails}) => {
     }
     
     return (
-        <div className="job-list">
+        <div className={styles.jobList}>
             {jobs.map((job, key) => (
                 <JobItem onViewDetails={() => {routeToDetailsPage(job.id)}}  key={key} title={job.title} company={job.company} role={job.role} experience={job.experience} skills={job.skills} />
             ))}

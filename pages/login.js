@@ -1,6 +1,6 @@
 "use client";
 
-import "../styles/pages/login.scss";
+import  styles from "../styles/pages/login.module.scss";
 
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,7 +10,6 @@ import { login } from "../src/app/store/slices/userSlice";
 export default function Login() {
 
     const dispatch = useDispatch();
-    const router = useRouter();
     const { isLoggedIn } = useSelector((state) => state.user);
 
     useEffect(() => {
@@ -39,32 +38,32 @@ export default function Login() {
     }
 
     return (
-        <div className="login">
-            <h2 className="login__title">Login Page</h2>
-            <form className="login__form" onSubmit={handleSubmit}>
-                <div className="login__form-group">
-                    <label className="login__label" htmlFor="username">Username:</label>
+        <div className={styles.login}>
+            <h2 className={styles.login__title}>Login Page</h2>
+            <form className={styles.login__form} onSubmit={handleSubmit}>
+                <div className={styles.login__form_group}>
+                    <label className={styles.login__label} htmlFor="username">Username:</label>
                     <input 
-                        className="login__input"
+                        className={styles.login__input}
                         type="text" 
                         id="username" 
                         value={username} 
                         onChange={(e) => setUsername(e.target.value)} 
                     />
                 </div>
-                <div className="login__form-group">
-                    <label className="login__label" htmlFor="password">Password:</label>
+                <div className={styles.login__form_group}>
+                    <label className={styles.login__label} htmlFor="password">Password:</label>
                     <input 
-                        className="login__input"
+                        className={styles.login__input}
                         type="password" 
                         id="password" 
                         value={password} 
                         onChange={(e) => setPassword(e.target.value)} 
                     />
                 </div>
-                <button className="login__button" type="submit">Login</button>
+                <button className={styles.login__button} type="submit">Login</button>
             </form>
-            {errorMsg && <p className="login__error">{errorMsg}</p>}
+            {errorMsg && <p className={styles.login__error}>{errorMsg}</p>}
         </div>
     )
 }

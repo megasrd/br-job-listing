@@ -13,7 +13,7 @@ export default function Login() {
 
     useEffect(() => {
         console.log(isLoggedIn);
-    }, []);
+    }, [isLoggedIn]);
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');    

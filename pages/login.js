@@ -1,5 +1,7 @@
 "use client";
 
+import "../styles/pages/login.scss";
+
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
@@ -37,20 +39,32 @@ export default function Login() {
     }
 
     return (
-        <div className="login-page">
-            <h2> Login Page </h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="username">Username:</label>
-                    <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <div className="login">
+            <h2 className="login__title">Login Page</h2>
+            <form className="login__form" onSubmit={handleSubmit}>
+                <div className="login__form-group">
+                    <label className="login__label" htmlFor="username">Username:</label>
+                    <input 
+                        className="login__input"
+                        type="text" 
+                        id="username" 
+                        value={username} 
+                        onChange={(e) => setUsername(e.target.value)} 
+                    />
                 </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <div className="login__form-group">
+                    <label className="login__label" htmlFor="password">Password:</label>
+                    <input 
+                        className="login__input"
+                        type="password" 
+                        id="password" 
+                        value={password} 
+                        onChange={(e) => setPassword(e.target.value)} 
+                    />
                 </div>
-                <button type="submit">Login</button>
+                <button className="login__button" type="submit">Login</button>
             </form>
-            { errorMsg && <p className="error">{errorMsg}</p> }
+            {errorMsg && <p className="login__error">{errorMsg}</p>}
         </div>
     )
 }

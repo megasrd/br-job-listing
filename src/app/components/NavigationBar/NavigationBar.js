@@ -21,7 +21,7 @@ const NavigationBar = () => {
         <nav className="navigation-bar">
             <ul className="container navigation-bar__wrapper">
                 <a href="/" className={`navigation-bar__item ${pathname == '/' ? 'active' : ''}`}> Find Jobs </a>
-                <a href="/post-new-job" className="navigation-bar__item"> Post A New Job </a>
+                <a href="/new-job" className="navigation-bar__item"> Post A New Job </a>
             </ul>
         </nav>
     );

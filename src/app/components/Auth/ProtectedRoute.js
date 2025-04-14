@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import { checkUser } from "../../store/slices/userSlice";
 
-export default function ProtectedRoute({ children }) {
+const ProtectedRoute = ({children}) => {
     const router = useRouter();
     const dispatch = useDispatch();
     const { isLoggedIn } = useSelector((state) => state.user);
@@ -25,3 +25,5 @@ export default function ProtectedRoute({ children }) {
 
     return children;
 }
+
+export default ProtectedRoute;

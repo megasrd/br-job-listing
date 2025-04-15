@@ -16,7 +16,7 @@ function Initializer({ children, store }) {
             }
         })
         .then(response => {
-            store.dispatch({ type: 'jobs/fetchJobsSuccess', payload: response.data })
+            store.dispatch({ type: 'jobs/fetchJobsSuccess', payload: response.data[0].jobs })
         })
         .catch(error => {
             store.dispatch({ type: 'jobs/fetchJobsFailure', payload: error.message });

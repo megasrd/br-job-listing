@@ -10,7 +10,7 @@ function Initializer({ children, store }) {
         //Fetch jobs data then set it.
         //dispatch intial action
         store.dispatch({ type: 'jobs/fetchJobsStart'});
-        fetch('http://localhost:3001/jobs')
+        fetch('https://job-mongo-db-a076e6ade381.herokuapp.com/jobs')
             .then(response => response.json())
             .then(data => {
                 store.dispatch({ type: 'jobs/fetchJobsSuccess', payload: data })

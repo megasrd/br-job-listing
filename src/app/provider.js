@@ -16,6 +16,8 @@ function Initializer({ children, store }) {
             }
         })
         .then(response => {
+            console.log("Jobs data fetched successfully:", response.data[0].jobs);
+            // Assuming the response structure is correct and contains jobs
             store.dispatch({ type: 'jobs/fetchJobsSuccess', payload: response.data[0].jobs })
         })
         .catch(error => {

@@ -1,7 +1,31 @@
 .jobList {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     padding-top: 18px;
     padding-bottom: 18px;
+    &__filters {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;  
+        gap: 32px;
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &__label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+        &__input {
+            width: 250px;
+            height: 40px;
+            border-radius: 4px;
+            padding: 12px;
+        }      
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 }
